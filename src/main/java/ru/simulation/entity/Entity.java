@@ -1,5 +1,11 @@
 package ru.simulation.entity;
 
-public abstract class Entity {
+import ru.simulation.Cell;
 
+public abstract class Entity {
+    private Cell cell;
+
+    public Entity(Cell cell) {
+        this.cell = cell;
+    }
 }
