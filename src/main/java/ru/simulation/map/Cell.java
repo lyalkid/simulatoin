@@ -11,6 +11,14 @@ public class Cell{
         this.x = x;
     }
 
+    public int getY() {
+        return y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
     // Переопределяем hashCode и equals
     @Override
     public int hashCode() {
