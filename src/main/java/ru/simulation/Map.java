@@ -1,19 +1,23 @@
 package ru.simulation;
+
 import ru.simulation.entity.Entity;
 
 import java.util.HashMap;
+
 public class Map {
     private HashMap<Cell, Entity> map;
 
-    public Map(HashMap<Cell, Entity> map) {
-        this.map = map;
+    public Map(){
+        this.map = new HashMap<>();
     }
 
-    public HashMap<Cell, Entity> getMap() {
-        return map;
+    public boolean containsCell(Cell cell) {
+        return this.map.containsKey(cell);
     }
-
-    public void setMap(HashMap<Cell, Entity> map) {
-        this.map = map;
+    public void put(Cell key, Entity value){
+        map.put(key, value);
+    }
+    public Entity getEntity(Cell cell){
+        return map.get(cell);
     }
 }

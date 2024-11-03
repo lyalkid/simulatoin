@@ -3,14 +3,15 @@ package ru.simulation.entity.landscape;
 import ru.simulation.Cell;
 import ru.simulation.entity.Entity;
 
-public class Rock extends Entity {
+public class Empty extends Entity {
 
-    public Rock(Cell cell) {
+
+    public Empty(Cell cell) {
         super(cell);
     }
 
     @Override
-    public void draw(){
-        System.out.print("⚫");
+    public void draw() {
+        System.out.print("\uD83D\uDFEB");
     }
 }

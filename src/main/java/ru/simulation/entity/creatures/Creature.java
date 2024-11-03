@@ -4,18 +4,15 @@ import ru.simulation.Cell;
 import ru.simulation.entity.Entity;
 
 public abstract class Creature extends Entity {
-    private int speed;
-    private int hp;
-    private double radius;
+    private  int speed;
+    private  int hp;
+    private  int damage;
+    private  double radius;
 
 
     public abstract void makeMove();
 
-    public Creature(int speed, int hp, double radius, Cell cell){
+    public Creature( Cell cell){
         super(cell);
-        this.speed = speed;
-        this.hp = hp;
-        this.radius = radius;
-
     }
 }
