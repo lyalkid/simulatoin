@@ -12,7 +12,7 @@ public abstract class Creature extends Entity {
 
     public abstract void makeMove();
 
-    public Creature( Cell cell){
-        super(cell);
+    public Creature( Cell cell, String emoji){
+        super(cell, emoji);
     }
 }

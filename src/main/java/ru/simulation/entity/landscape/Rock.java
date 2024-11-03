@@ -4,13 +4,19 @@ import ru.simulation.map.Cell;
 import ru.simulation.entity.Entity;
 
 public class Rock extends Entity {
-
-    public Rock(Cell cell) {
-        super(cell);
+    private final String rock = "⚫";
+    public Rock(Cell cell ) {
+        super(cell, "");
+        setEmoji(rock);
     }
 
     @Override
     public void draw(){
-        System.out.print("⚫");
+        System.out.print(getEmoji());
+
+    }
+
+    public String getRock() {
+        return rock;
     }
 }

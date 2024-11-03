@@ -5,13 +5,21 @@ import ru.simulation.entity.Entity;
 
 public class Tree extends Entity {
 
-    public Tree(Cell cell) {
-        super(cell);
+    private final String tree = "\uD83C\uDF33";
+
+
+    public Tree(Cell cell ) {
+        super(cell, "");
+        setEmoji(tree);
     }
 
     @Override
     public void draw(){
-        System.out.print("\uD83C\uDF33");
+        System.out.print(getEmoji());
 
+    }
+
+    public String getTree() {
+        return tree;
     }
 }
