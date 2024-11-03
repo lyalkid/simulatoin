@@ -1,6 +1,6 @@
 package ru.simulation.entity.creatures;
 
-import ru.simulation.Cell;
+import ru.simulation.map.Cell;
 
 public class Predator extends Creature {
     private final int PREDATOR_HP = 100;

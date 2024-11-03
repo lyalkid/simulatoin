@@ -1,6 +1,6 @@
 package ru.simulation.entity.landscape;
 
-import ru.simulation.Cell;
+import ru.simulation.map.Cell;
 import ru.simulation.entity.Entity;
 
 public class Rock extends Entity {

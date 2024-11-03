@@ -1,6 +1,6 @@
 package ru.simulation.entity.creatures;
 
-import ru.simulation.Cell;
+import ru.simulation.map.Cell;
 import ru.simulation.entity.Entity;
 
 public abstract class Creature extends Entity {

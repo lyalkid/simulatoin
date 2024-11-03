@@ -7,6 +7,8 @@ import ru.simulation.entity.landscape.Empty;
 import ru.simulation.entity.landscape.Grass;
 import ru.simulation.entity.landscape.Rock;
 import ru.simulation.entity.landscape.Tree;
+import ru.simulation.map.Cell;
+import ru.simulation.map.Map;
 
 import java.util.Random;
 

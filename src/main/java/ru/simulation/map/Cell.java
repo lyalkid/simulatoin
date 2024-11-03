@@ -1,6 +1,4 @@
-package ru.simulation;
-
-import ru.simulation.entity.creatures.Creature;
+package ru.simulation.map;
 
 import java.util.Objects;
 

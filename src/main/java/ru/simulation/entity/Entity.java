@@ -1,6 +1,6 @@
 package ru.simulation.entity;
 
-import ru.simulation.Cell;
+import ru.simulation.map.Cell;
 
 public abstract class Entity {
     private Cell cell;

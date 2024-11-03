@@ -1,4 +1,4 @@
-package ru.simulation;
+package ru.simulation.map;
 
 import ru.simulation.entity.Entity;
 

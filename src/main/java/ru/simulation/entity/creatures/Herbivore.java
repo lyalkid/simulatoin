@@ -1,6 +1,6 @@
 package ru.simulation.entity.creatures;
 
-import ru.simulation.Cell;
+import ru.simulation.map.Cell;
 import ru.simulation.entity.landscape.Grass;
 
 public class Herbivore extends Creature{
