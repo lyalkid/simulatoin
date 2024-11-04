@@ -3,12 +3,45 @@ package ru.simulation.action;
 import ru.simulation.entity.creatures.*;
 import ru.simulation.entity.landscape.*;
 import ru.simulation.map.Cell;
-import ru.simulation.map.Map;
+import ru.simulation.map.MyMap;
 
 import java.util.Random;
 
 public class Init extends Action {
-    public void initMap(Map map, int fieldY, int fieldX) {
+//    public void initMap(MyMap myMap, int fieldY, int fieldX) {
+//
+//        Random random = new Random();
+//        for (int i = 0; i < fieldY; i++) {
+//            for (int j = 0; j < fieldX; j++) {
+//                Cell cell = new Cell(i, j);
+//                int randomNum = random.nextInt(100);
+//                if (randomNum < 50) {
+//                    myMap.put(cell, new Empty(cell));// 50% для пустых клеток
+//
+//                } else if (randomNum < 65 ) {
+//                    myMap.put(cell, new Grass(cell));// 15% для травы
+//
+//
+//                } else if (randomNum < 75 ) {
+//                    myMap.put(cell, new Herbivore(cell)); // 10% для травоядных
+//
+//
+//                } else if (randomNum < 85 ) {
+//                    myMap.put(cell, new Predator(cell));  // 10% для хищников
+//                }
+//                else if (randomNum < 92) {
+//                    myMap.put(cell, new Tree(cell));      // 7% для деревьев
+//
+//                } else {
+//                    myMap.put(cell, new Rock(cell));      // 8% для камней
+//
+//                }
+//
+//            }
+//        }
+//    }
+
+    public void initMap(MyMap map, int fieldY, int fieldX) {
         int p = 0, g = 0, h = 0;
         boolean flag = false;
         Random random = new Random();
@@ -48,4 +81,7 @@ public class Init extends Action {
             }
         }
     }
+
+
+
 }

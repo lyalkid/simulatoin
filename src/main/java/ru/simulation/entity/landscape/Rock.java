@@ -10,11 +10,7 @@ public class Rock extends Entity {
         setEmoji(rock);
     }
 
-    @Override
-    public void draw(){
-        System.out.print(getEmoji());
 
-    }
 
     public String getRock() {
         return rock;

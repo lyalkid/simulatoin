@@ -1,10 +1,10 @@
 package ru.simulation.render;
 
-import ru.simulation.map.Map;
+import ru.simulation.map.MyMap;
 
 public interface Renderable
 {
 //    void renderMap();
 
-    void renderMap(Map map, int fieldY, int fieldX);
+    void renderMap(MyMap myMap, int fieldY, int fieldX);
 }

@@ -6,27 +6,29 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Map {
+public class MyMap {
     private HashMap<Cell, Entity> map;
 
-    public Map(){
+    public MyMap() {
         this.map = new HashMap<>();
     }
 
     public boolean containsCell(Cell cell) {
         return this.map.containsKey(cell);
     }
-    public void put(Cell key, Entity value){
+
+    public void put(Cell key, Entity value) {
         map.put(key, value);
     }
-    public Entity getEntity(Cell cell){
+
+    public Entity getEntity(Cell cell) {
         return map.get(cell);
     }
 
-    public <T extends  Entity> Set<T> getEntitiesOfType(Class<T> clazz){
+    public <T extends Entity> Set<T> getEntitiesOfType(Class<T> clazz) {
         Set<T> creatures = new HashSet<>();
-        for (Entity entity : map.values()){
-            if(clazz.isInstance(entity)){
+        for (Entity entity : map.values()) {
+            if (clazz.isInstance(entity)) {
                 creatures.add((T) entity);
             }
         }

@@ -32,4 +32,12 @@ public class Cell{
         Cell cell = (Cell) obj;
         return y == cell.y && x == cell.x;
     }
+
+    @Override
+    public String toString() {
+        return "Cell{" +
+                "y=" + y +
+                ", x=" + x +
+                '}';
+    }
 }

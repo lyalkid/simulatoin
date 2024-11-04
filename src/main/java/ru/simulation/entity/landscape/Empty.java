@@ -4,7 +4,7 @@ import ru.simulation.map.Cell;
 import ru.simulation.entity.Entity;
 
 public class Empty extends Entity {
-    private final String empty = "\uD83D\uDFEB" ;
+    private final String empty = "\uD83D\uDFEB";
 
 
     public Empty(Cell cell) {
@@ -13,10 +13,6 @@ public class Empty extends Entity {
 
     }
 
-    @Override
-    public void draw() {
-        System.out.print(getEmoji());
-    }
 
     public String getEmpty() {
         return empty;

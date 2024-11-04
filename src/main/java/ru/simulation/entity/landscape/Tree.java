@@ -13,11 +13,7 @@ public class Tree extends Entity {
         setEmoji(tree);
     }
 
-    @Override
-    public void draw(){
-        System.out.print(getEmoji());
 
-    }
 
     public String getTree() {
         return tree;

@@ -12,11 +12,7 @@ public class Grass extends Entity {
         setEmoji(grass);
     }
 
-    @Override
-    public void draw(){
-//        System.out.print("\uD83C\uDF3F");
-        System.out.print(getEmoji());
-    }
+
 
     public String getGrass() {
         return grass;
